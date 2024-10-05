@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/f6d2e1940e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav id="desktop-nav">
+        <div class="logo">John Joseph Zagariah Daniel</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">John Joseph Zagariah Daniel</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="assets/profile-pic.png" alt="John Joseph profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">John Joseph</h1>
+          <p class="section__text__p2">Data Analyst</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('assets/zjohnjoseph-resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/josephjohn2211/', '_blank');"
+            />
+            <img
+              src="assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="window.open('https://github.com/zjohnjoseph/', '_blank');"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="text-container">
+              <p>
+                I'm John Joseph, an experienced data analyst specializing in Splunk and Power BI. 
+                With a deep passion for machine learning, I'm currently pursuing a Master of Computer Science with a focus on Applied Artificial Intelligence at the University of Ottawa, aiming to transition into a role as a Machine Learning Engineer. 
+                Alongside my professional journey, I have a passion for teaching. Let's connect for discussions on data analysis, AI trends, and opportunities in machine learning and teaching!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <p class="section__text__p1">Dive Deeper</p>
+        <h1 class="title">Education</h1>
+        <div class="section-container">
+          <div class="education-details-container">
+           <div class="education-containers">
+              <div class="details-container">
+                <img
+                  src="assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Master of Computer Science</h3>
+                <p>Applied Artificial Intelligence <br />University of Ottawa <br />Jan 2024 - Present <br />CGPA - 9.33</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Bachelor of Engineering</h3>
+                <p>Computer Science<br />Anna University <br />Aug 2017 - Aug 2021 <br />CGPA - 8.75</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>High School</h3>
+                <p>Computer Science<br />Jaigopal Garodia Matriculation Higher Secondary School <br />Jun 2005 - May 2017 
+                <br />S.S.L.C - 96%, H.S.C - 95.8%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore</p>
+        <h1 class="title">My Experience</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="assets/accenture-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="experience-details-container">
+            <div class="text-container">           
+            <h3>Accenture Solutions Pvt. Ltd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aug 2021 - Dec 2023</h3>
+            <p>Data Analyst</p>
+            <ul>
+              <li>Developed and deployed a Splunk application focused on cost optimization by monitoring Azure Services usage, improving resource allocation efficiency by 25%.</li>
+              <li>Automated manual processes using Python and shell scripting, reducing operational time by 30% and enhancing workflow.</li>
+              <li>Designed and deployed custom REST endpoints in Splunk to address specific business needs, extending platform capabilities and supporting data-driven decision-making.</li>
+              <li>Utilized Splunk and Power BI to build interactive dashboards and generate detailed reports, providing actionable insights for infrastructure monitoring, alert creation, and reporting.</li>
+              <li>Collaborated cross-functionally with system administrators and network engineers to troubleshoot issues and enhance Splunk performance, ensuring reliable system operations.</li>
+              <li>Performed regular administrative tasks, including user management, role assignment, and access control, to ensure data security and proper system utilization.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <p class="section__text__p1">Have a Look at</p>
+        <h1 class="title">My Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Technical Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Splunk</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Power BI</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PyTorch</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Scikit-Learn</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MLOps</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Excel</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Oracle</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Mongo DB</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Django</h3>
+                    <p>Elementary</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React.js</h3>
+                    <p>Elementary</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AWS</h3>
+                    <p>Elementary</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git & Github</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div id="project">
+          <div class="project-container">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="assets/project-1.png">
+                <div class="layer">
+                  <h3>Can LLM’s Solve Brain Teasers?  </h3>
+                  <p>Explored the capabilities of Google's Gemma and Meta’s Llama 3 LLMs in solving brain teasers.</p>
+                  <a href="https://github.com/zjohnjoseph/Can-LLM-s-Solve-Brain-Teasers" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="assets/project-2.png">
+                <div class="layer">
+                  <h3>Semi-Supervised Learning in Banking Marketing Data</h3>
+                  <p>Collaborated to investigate and implement semi-supervised learning methods to address label scarcity and class imbalance</p>
+                  <a href="https://github.com/zjohnjoseph/Semi-Supervised-Learning-in-Banking-Marketing-Data" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="assets/project-3.png">
+                <div class="layer">
+                  <h3>The Interviewer</h3>
+                  <p>An end-to-end website for conducting and managing technical interviews</p>
+                  <a href="https://github.com/zjohnjoseph/The-Interviewer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="work-list wl-row-two">
+              <div class="work">
+                <img src="assets/project-1.png">
+                <div class="layer">
+                  <h3> Project 4</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora quis unde assumenda aliquam sint cumque, aperiam sunt, praesentium dicta qui, repudiandae optio veritatis maiores eum vero quasi. Ut, odit!</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="assets/project-2.png">
+                <div class="layer">
+                  <h3> Project 5</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora quis unde assumenda aliquam sint cumque, aperiam sunt, praesentium dicta qui, repudiandae optio veritatis maiores eum vero quasi. Ut, odit!</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="assets/project-3.png">
+                <div class="layer">
+                  <h3> Project 6</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora quis unde assumenda aliquam sint cumque, aperiam sunt, praesentium dicta qui, repudiandae optio veritatis maiores eum vero quasi. Ut, odit!</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div> -->
+            <a href="#" class="btn-see-more">See More</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <p class="section__text__p1"><br><br><br>Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:zjohnjoseph@gmail.com">Email</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/josephjohn2211/" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 John Joseph. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>
